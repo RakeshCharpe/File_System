@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>My first hands on frontend</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+       
+        <!-- to show drop down function files type and all -->
+        <div id="header">
+            <button id="addFolder">Add Folder</button>
+            <button id="addTextFile">Add TextFile</button>
+        </div>
+
+            <!-- it is the path where we are  -->
+        <div id="breadCrumb">
+                <a purpose="path" rid="-1">Root</a>
+        </div>
+
+            <!-- this is for to show the entire container -->
+        <div id="container">
+        
+        </div>
+
+
+        <!-- this is for the to show the content of the folder -->
+        <div id="app">app</div>
+
+        <template id="templates">
+           <div class="folder" type="folder" rid="" pid="">
+                <span action="rename"><i class="fas fa-pen"></i></span>
+                <span action="delete"><i class="fas fa-trash"></i></span>
+                <span action="view"><i class="fas fa-eye"></i></span>
+                <div purpose="name"></div>
+           </div>
+           <div class="text-file" type="folder" rid="" pid="">
+                <span action="rename"><i class="fas fa-pen"></i></span>
+                <span action="delete"><i class="fas fa-trash"></i></span>
+                <span action="view"><i class="fas fa-eye"></i></span>
+                <div purpose="name"></div>
+           </div>
+            <a purpose="path" rid="-1">Root</a>
+        </template>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
